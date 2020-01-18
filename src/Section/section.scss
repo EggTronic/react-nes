@@ -24,12 +24,20 @@
 
 .with-title_flow {
     p:first-child { 
-        animation:movement 4s linear infinite normal;
+        animation:movement 6s linear infinite normal;
     }
     @keyframes movement {
         0% {
-            transform: translateX(-120px);
-            -webkit-transform: translateX(-120px);
+            transform: translateX(-120%);
+            -webkit-transform: translateX(-120%);
+        }
+        40% {
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+        }
+        60% {
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
         }
         100% {
             transform: translateX(120%);
