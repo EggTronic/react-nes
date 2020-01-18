@@ -16,7 +16,7 @@ export const Theme = () => <div>
 
 export const Title = () => <div>
     <Section title={'Primary'} theme='primary'> Primary </Section>
-    <Section title={'Primary'} titleFlow={true} theme='primary'> Primary </Section>
+    <Section title={'Success'} titleFlow={true} theme='success'> Success </Section>
 </div>;
 
 export const Fill = () => <div>
