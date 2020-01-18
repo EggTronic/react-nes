@@ -1,5 +1,5 @@
 {
-  "name": "react-component-library",
+  "name": "react-nes",
   "version": "1.0.0",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -7,7 +7,7 @@
   "files": [
     "build"
   ],
-  "description": "A skeleton to create your own React component library using Rollup, TypeScript, Sass and Storybook",
+  "description": "React component library based on NES.css",
   "scripts": {
     "build": "rollup -c",
     "test": "jest --watch",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HarveyD/react-component-library.git"
+    "url": "git+https://github.com/EggTronic/react-nes.git"
   },
   "keywords": [
     "React",
@@ -28,12 +28,12 @@
     "Sass",
     "Storybook"
   ],
-  "author": "Harvey Delaney",
-  "license": "ISC",
+  "author": "EggTronic",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HarveyD/react-component-library/issues"
+    "url": "https://github.com/EggTronic/react-nes/issues"
   },
-  "homepage": "https://github.com/HarveyD/react-component-library#readme",
+  "homepage": "https://github.com/EggTronic/react-nes#readme",
   "peerDependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
