@@ -39,6 +39,7 @@
         - [x] themed section
         - [ ] dark section
         - [ ] title center
+        - [ ] rounded corners
    - [ ] Radio
    - [ ] Checkbox
    - [ ] Input
