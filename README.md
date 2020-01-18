@@ -7,7 +7,10 @@
   <a href="https://nostalgic-css.github.io/NES.css/" target="_blank"><img src="https://user-images.githubusercontent.com/5305599/49061716-da649680-f254-11e8-9a89-d95a7407ec6a.png" alt="NES.css: NES-style  CSS framework" style="max-width: 100%;" width="600" height="315"></a>
 </div>
 
->NES.css is compatible with the newest version of the following browsers:
+>NES.css is NES-style (8bit-like) CSS Framework.
+
+>NES.css is compatible with the newest version of the following
+ browsers:
 >* Chrome
 >* Firefox
 >* Safari
@@ -26,6 +29,42 @@
 
  #### Storybook
 `npm run storybook`
+
+ #### Todo
+ - Basic components
+   - [x] Button
+        - [x] themed button
+   - [ ] Section
+        - [x] title scroll
+        - [x] themed section
+        - [ ] dark section
+        - [ ] title center
+   - [ ] Radio
+   - [ ] Checkbox
+   - [ ] Input
+        - [ ] input basic
+        - [ ] search - auto complete
+   - [ ] Textarea
+   - [ ] Select
+   - [ ] Dialogs
+   - [ ] Lists
+   - [ ] Tables
+   - [ ] Progress
+   - [ ] Avatars
+   - [ ] Balloons
+   - [ ] Badges
+   - [ ] Icons
+        - [ ] Reaction-icon
+        - [ ] Sns-icon
+        - [ ] Other-icon
+        - [ ] Customize-icon
+        - [ ] Pixel-arts
+   - [ ] Reaction-icon
+   - [ ] Sns-icons
+   - [ ] Card
+
+
+
 
 ---
 
