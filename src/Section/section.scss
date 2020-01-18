@@ -6,3 +6,9 @@
         color: map-get($colors, $c);
     }
 }
+
+@each $c in primary-shadow, success-shadow, warning-shadow, error-shadow, disabled-shadow {
+    .nes-container.nes-container-filled_#{$c} {
+        background-color: map-get($colors, $c);
+    }
+}

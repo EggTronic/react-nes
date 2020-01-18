@@ -18,7 +18,8 @@ const Section: React.FC<SectionProps> = ({ children, className, fill, theme, tit
         'nes-container',
         {
             [`nes-container_${theme}`]: theme,
-            'with-title': title
+            'with-title': title,
+            [`nes-container-filled_${theme}-shadow`]: fill
         }
     )}
     {...other}
