@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+$colors: (
+    primary: #209cee,
+    primary-shadow: #006bb3,
+    
+    success: #92cc41,
+    success-shadow: #4aa52e,
+    
+    warning: #f7d51d,
+    warning-shadow: #e59400,
+
+    error: #e76e55,
+    error-shadow: #8c2022,
+
+    disabled: #d3d3d3,
+    disabled-shadow:#adafbc,
+);
+
+$fonts: (
+    press-start-2p: "Press Start 2P"
+);
+
+body {
+    font-family: map-get($fonts, press-start-2p);
+}
+

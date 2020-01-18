@@ -1,0 +1,8 @@
+@import '../index.scss';
+
+@each $c in primary, success, warning, error, disabled {
+    .nes-container.nes-container_#{$c} {
+        border-color: map-get($colors, $c);
+        color: map-get($colors, $c);
+    }
+}
