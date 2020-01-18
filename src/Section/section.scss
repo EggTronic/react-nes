@@ -1,5 +1,14 @@
 @import '../index.scss';
 
+.nes-container {
+    h3:first-child {
+        overflow: hidden;
+    }
+    p:first-child { 
+        height: 0.5rem;
+    }
+}
+
 @each $c in primary, success, warning, error, disabled {
     .nes-container.nes-container_#{$c} {
         border-color: map-get($colors, $c);
@@ -10,5 +19,21 @@
 @each $c in primary-shadow, success-shadow, warning-shadow, error-shadow, disabled-shadow {
     .nes-container.nes-container-filled_#{$c} {
         background-color: map-get($colors, $c);
+    }
+}
+
+.with-title_flow {
+    p:first-child { 
+        animation:movement 4s linear infinite normal;
+    }
+    @keyframes movement {
+        0% {
+            transform: translateX(-120px);
+            -webkit-transform: translateX(-120px);
+        }
+        100% {
+            transform: translateX(120%);
+            -webkit-transform: translateX(120%);
+        }
     }
 }

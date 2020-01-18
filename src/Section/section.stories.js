@@ -15,16 +15,11 @@ export const Theme = () => <div>
 </div>;
 
 export const Title = () => <div>
-    <Section title={'Normal'}> Normal </Section>
     <Section title={'Primary'} theme='primary'> Primary </Section>
-    <Section title={'Success'} theme='success'> Success </Section>
-    <Section title={'Warning'} theme='warning'> Warning </Section>
-    <Section title={'Error'} theme='error'> Error </Section>
-    <Section title={'Disabled'} theme='disabled'> Disabled </Section>
+    <Section title={'Primary'} titleFlow={true} theme='primary'> Primary </Section>
 </div>;
 
 export const Fill = () => <div>
-    <Section title={'Normal'} fill={true}> Normal </Section>
     <Section title={'Primary'} fill={true} theme='primary'> Primary </Section>
     <Section title={'Success'} fill={true} theme='success'> Success </Section>
     <Section title={'Warning'} fill={true} theme='warning'> Warning </Section>
