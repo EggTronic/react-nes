@@ -16,7 +16,7 @@ export const Theme = () => <div>
 
 export const Title = () => <div>
     <Section title={'Static'} theme='primary'> Static Title </Section>
-    <Section title={'Rolling'} titleFlow={true} theme='success'> This title is rolling! </Section>
+    <Section title={'Rolling'} titleScroll={true} theme='success'> This title is rolling! </Section>
 </div>;
 
 export const Fill = () => <div>
@@ -24,6 +24,6 @@ export const Fill = () => <div>
     <Section title={'Success'} fill={true} theme='success'> Success </Section>
     <Section title={'Warning'} fill={true} theme='warning'> Warning </Section>
     <Section title={'Error'} fill={true} theme='error'> Error </Section>
-    <Section title={'Disabled'} fill={true} theme='disabled'> Disabled </Section>
+    <Section title={'Disabled'} fill={true} titleScroll={true} theme='disabled'> Disabled </Section>
 </div>;
 

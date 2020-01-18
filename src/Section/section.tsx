@@ -9,10 +9,10 @@ interface SectionProps {
   fill: boolean;
   title: string;
   titleStyle: string;
-  titleFlow: boolean;
+  titleScroll: boolean;
 }
 
-const Section: React.FC<SectionProps> = ({ children, className, fill, theme, title, titleStyle, titleFlow, ...other }) => (
+const Section: React.FC<SectionProps> = ({ children, className, fill, theme, title, titleStyle, titleScroll, ...other }) => (
   <section 
     className = {classnames(
         className,
@@ -21,7 +21,7 @@ const Section: React.FC<SectionProps> = ({ children, className, fill, theme, tit
             [`nes-container_${theme}`]: theme,
             'with-title': title,
             [`nes-container-filled_${theme}-shadow`]: fill,
-            'with-title_flow': titleFlow
+            'with-title_flow': titleScroll
         }
     )}
     {...other}
