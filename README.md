@@ -3,7 +3,7 @@
 
 > Demo: https://eggtronic.github.io/react-nes/
 ---
-## 🎮 NES.css
+## 🌈 NES.css
 <div align="center">
   <a href="https://nostalgic-css.github.io/NES.css/" target="_blank"><img src="https://user-images.githubusercontent.com/5305599/49061716-da649680-f254-11e8-9a89-d95a7407ec6a.png" alt="NES.css: NES-style  CSS framework" style="max-width: 100%;" width="600" height="315"></a>
 </div>
@@ -22,16 +22,16 @@
 ---
 ## 🔨 Development
 
- #### Testing
+ #### 🧪 Testing
 `npm run test`
 
- #### Building
+ #### 🔧 Building
 `npm run build`
 
- #### Storybook
+ #### 🔖 Storybook
 `npm run storybook`
 
- #### Todo
+ #### 📝 Todo
  - Basic components
    - [x] Text
    - [x] Button
@@ -72,13 +72,13 @@
    - [ ] prettier
    - [ ] theme generate
 
-- Fancy
+- 🍭 Fancy
    - [ ] beat with music
 
 
 ---
 
-### Fonts
+### 🅰️ Fonts
 List of fonts that are recommend for usage alongside the library.
 
 | Language  | Font                                                               |
@@ -90,7 +90,7 @@ List of fonts that are recommend for usage alongside the library.
 | Korean    | [둥근모꼴](http://cactus.tistory.com/193)                              |
 ---
 
-## Check out
+## ☑️ Check out
 Take a look at https://github.com/Divoolej/react-select-nes-css-theme for making the popular [react-select](https://github.com/JedWatson/react-select) fit in with nes.css!
 
 ---
