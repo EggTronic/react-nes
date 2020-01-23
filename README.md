@@ -72,6 +72,8 @@
    - [ ] prettier
    - [ ] theme generate
 
+- Fancy
+   - [ ] beat with music
 
 
 ---
