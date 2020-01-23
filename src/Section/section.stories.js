@@ -12,6 +12,7 @@ export const Theme = () => <div>
     <Section theme='warning'> Warning </Section>
     <Section theme='error'> Error </Section>
     <Section theme='disabled'> Disabled </Section>
+    <Section theme='dark'> Dark </Section>
 </div>;
 
 export const Title = () => <div>
@@ -25,5 +26,6 @@ export const Fill = () => <div>
     <Section title={'Warning'} fill={true} theme='warning'> Warning </Section>
     <Section title={'Error'} fill={true} theme='error'> Error </Section>
     <Section title={'Disabled'} fill={true} titleScroll={true} theme='disabled'> Disabled </Section>
+    <Section title={'Dark'} fill={true} theme='dark'> Dark </Section>
 </div>;
 

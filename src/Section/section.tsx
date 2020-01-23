@@ -5,7 +5,7 @@ import classnames from 'classnames'
 interface SectionProps {
   children: any;
   className: string;
-  theme: "primary" | "success" | "warning" | "error" | "disabled";
+  theme: "primary" | "success" | "warning" | "error" | "disabled" | "dark";
   fill: boolean;
   title: string;
   titleStyle: string;
@@ -18,7 +18,8 @@ const Section: React.FC<SectionProps> = ({ children, className, fill, theme, tit
         className,
         'nes-container',
         {
-            [`nes-container_${theme}`]: theme,
+            [`nes-container_${theme}`]: theme !== "dark"? theme:false,
+            'is-dark': theme === "dark",
             'with-title': title,
             [`nes-container-filled_${theme}-shadow`]: fill,
             'with-title_flow': titleScroll

@@ -13,5 +13,6 @@ export const Theme = () => <Section title='Buttons' titleScroll={true} >
                               <Button theme="success"> Success </Button>
                               <Button theme="error"> Error </Button>
                               <Button theme="disabled"> Disabled </Button>
+                              <Button theme="dark"> Dark </Button>
                             </Section>;
 
