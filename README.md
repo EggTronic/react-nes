@@ -36,10 +36,11 @@
    - [x] Text
    - [x] Button
         - [x] themed button
+        - [x] dark button
    - [ ] Section
         - [x] title scroll
         - [x] themed section
-        - [ ] dark section
+        - [x] dark section
         - [ ] title center
         - [ ] rounded corners
    - [ ] Radio
