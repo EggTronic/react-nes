@@ -33,6 +33,7 @@
 
  #### Todo
  - Basic components
+   - [x] Text
    - [x] Button
         - [x] themed button
    - [ ] Section
@@ -64,7 +65,11 @@
    - [ ] Reaction-icon
    - [ ] Sns-icons
    - [ ] Card
-
+   
+- Porject Related
+   - [ ] eslint
+   - [ ] prettier
+   - [ ] theme generate
 
 
 

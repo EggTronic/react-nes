@@ -1,3 +1,4 @@
+import Text from "./Text/text";
 import Button from "./Button/button";
 import Section from "./Section/section";
 
@@ -6,5 +7,6 @@ import "./index.scss";
 
 export { 
     Button,
-    Section
+    Section,
+    Text,
 };

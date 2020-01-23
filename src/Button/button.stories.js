@@ -8,10 +8,10 @@ export default {
 
 export const Theme = () => <Section title='Buttons' titleScroll={true} >
                               <Button> Normal </Button>
-                              <Button theme="is-primary"> Primary </Button>
-                              <Button theme="is-warning"> Warning </Button>
-                              <Button theme="is-success"> Success </Button>
-                              <Button theme="is-error"> Error </Button>
-                              <Button theme="is-disabled"> Disabled </Button>
+                              <Button theme="primary"> Primary </Button>
+                              <Button theme="warning"> Warning </Button>
+                              <Button theme="success"> Success </Button>
+                              <Button theme="error"> Error </Button>
+                              <Button theme="disabled"> Disabled </Button>
                             </Section>;
 
