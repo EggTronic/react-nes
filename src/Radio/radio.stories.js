@@ -1,17 +1,30 @@
-import React from 'react';
-import {Radio} from '../index';
-import {Section} from '../index';
+import React from "react";
+import { Radio, RadioGroup } from "../index";
+import { Section } from "../index";
+import { State, Store } from "@sambego/storybook-state";
 
 export default {
-  title: 'Radio'
+  title: "Radio"
 };
 
-const options = [
-  { value: 'yes', label: 'yes'},
-  { value: 'no', label: 'no'},
-];
+const store = new Store({
+  selectedValue: "1"
+});
 
-export const Theme = () => <Section title='Radios' titleScroll={true} >
-                              <Radio options = {options}/>
-                            </Section>;
+const onValueChange = value => {
+  store.set({ selectedValue: value });
+};
 
+export const Theme = () => (
+  <Section title="Radios" titleScroll={true}>
+    <State store={store}>
+      <RadioGroup
+        selectedValue={store.get("selectedValue")}
+        onChange={onValueChange}
+      >
+        <Radio theme="primary" value="1" label="o1" />
+        <Radio theme="primary" value="2" label="o2" />
+      </RadioGroup>
+    </State>
+  </Section>
+);

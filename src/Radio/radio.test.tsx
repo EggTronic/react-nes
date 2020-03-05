@@ -1,7 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-
-import Button from "./button";
+import Radio from "./radio";
 
 describe("Test Component", () => {
   let props: any;
@@ -10,7 +9,7 @@ describe("Test Component", () => {
     props = {};
   });
 
-  const renderWrapper = () => shallow(<Button {...props} />);
+  const renderWrapper = () => shallow(<Radio {...props} />);
 
   describe("Snapshots", () => {
     it("should match snapshots as normal themed", () => {

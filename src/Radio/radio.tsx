@@ -1,41 +1,43 @@
 import React from "react";
-import classnames from 'classnames';
-import './radio.scss';
+import classnames from "classnames";
+import "./radio.scss";
 
 interface RadioProps {
-  children: any;
   className: string;
   theme: "primary" | "success" | "warning" | "error" | "disabled" | "dark";
-  onValueChange: (value: string) => void;
-  options: Array<{ value: string; label: string; selected: boolean }>;
+  value: string;
+  label: string;
+  disabled: boolean;
+  isActive: boolean;
+  onClick: (value: any) => any;
 }
 
-const Radio: React.FC<RadioProps> = ({ children, className, theme, options, onValueChange, ...other }) => (
-  <div>
-    {options.map((option, index) => (
-      <label
-        key={index}
-        className="nes-radio-group"
-        onClick={() => onValueChange(option.value)}
-      >
-        <input
-          type="radio"
-          className={classnames(
-            className, 
-            "nes-radio",
-            {
-              [`is-${theme}`]: theme,
-            },
-          )}
-          value={option.value}
-          checked={option.selected}
-          onChange={() => {}}
-          {...other}
-        />
-        <span>{option.label}</span>
-    </label>
-    ))}
-  </div>
-);  
+// here we use class component so that RadioGroup can inject props into Radio
+const Radio: React.FC<RadioProps> = ({
+  className,
+  theme,
+  isActive,
+  value,
+  label,
+  disabled,
+  onClick,
+  ...other
+}) => (
+  <label className="nes-radio-group">
+    <input
+      type="radio"
+      className={classnames(className, "nes-radio", {
+        [`is-${theme}`]: theme
+      })}
+      value={value}
+      checked={isActive}
+      onChange={() => {
+        onClick(value);
+      }}
+      {...other}
+    />
+    <span>{label}</span>
+  </label>
+);
 
 export default Radio;

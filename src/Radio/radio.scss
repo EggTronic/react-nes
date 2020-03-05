@@ -1,8 +1,8 @@
-@import '../index.scss';
+@import "../index.scss";
 
-.nes-btn{
-    &.is-dark {
-        background-color: map-get($colors, dark);
-        color: map-get($colors, white);
-    }
+.nes-btn {
+  &.is-dark {
+    background-color: map-get($colors, dark);
+    color: map-get($colors, white);
+  }
 }
