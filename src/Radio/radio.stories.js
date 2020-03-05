@@ -23,7 +23,7 @@ export const Theme = () => (
         onChange={onValueChange}
       >
         <Radio theme="primary" value="1" label="o1" />
-        <Radio theme="primary" value="2" label="o2" />
+        <Radio theme="success" value="2" label="o2" />
       </RadioGroup>
     </State>
   </Section>

@@ -1,84 +1,100 @@
 # 🎮 react-nes
+
 > An React Component Library Build Up On NES.css
 
 > Demo: https://eggtronic.github.io/react-nes/
+
 ---
+
 ## 🌈 NES.css
+
 <div align="center">
   <a href="https://nostalgic-css.github.io/NES.css/" target="_blank"><img src="https://user-images.githubusercontent.com/5305599/49061716-da649680-f254-11e8-9a89-d95a7407ec6a.png" alt="NES.css: NES-style  CSS framework" style="max-width: 100%;" width="600" height="315"></a>
 </div>
 
->NES.css is NES-style (8bit-like) CSS Framework.
+> NES.css is NES-style (8bit-like) CSS Framework.
 
->NES.css is compatible with the newest version of the following
- browsers:
->* Chrome
->* Firefox
->* Safari
+> NES.css is compatible with the newest version of the following
+> browsers:
+>
+> - Chrome
+> - Firefox
+> - Safari
 
->Untested
->* IE/Edge
+> Untested
+>
+> - IE/Edge
 
 ---
+
 ## 🔨 Development
 
- #### 🧪 Testing
+#### 🧪 Testing
+
 `npm run test`
 
- #### 🔧 Building
+#### 🔧 Building
+
 `npm run build`
 
- #### 🔖 Storybook
+#### 🔖 Storybook
+
 `npm run storybook`
 
- #### 📝 Todo
- - Basic components
-   - [x] Text
-   - [x] Button
-        - [x] themed button
-        - [x] dark button
-   - [ ] Section
-        - [x] title scroll
-        - [x] themed section
-        - [x] dark section
-        - [ ] title center
-        - [ ] rounded corners
-   - [ ] Radio
-   - [ ] Checkbox
-   - [ ] Input
-        - [ ] input basic
-        - [ ] search - auto complete
-   - [ ] Textarea
-   - [ ] Select
-   - [ ] Dialogs
-   - [ ] Lists
-   - [ ] Tables
-   - [ ] Progress
-   - [ ] Avatars
-   - [ ] Balloons
-   - [ ] Badges
-   - [ ] Icons
-        - [ ] Reaction-icon
-        - [ ] Sns-icon
-        - [ ] Other-icon
-        - [ ] Customize-icon
-        - [ ] Pixel-arts
-   - [ ] Reaction-icon
-   - [ ] Sns-icons
-   - [ ] Card
-   
+#### 📝 Todo
+
+- Basic components
+
+  - [x] Text
+  - [x] Button
+    - [x] themed button
+    - [x] dark button
+  - [ ] Section
+    - [x] title scroll
+    - [x] themed section
+    - [x] dark section
+    - [ ] title center
+    - [ ] rounded corners
+  - [ ] Radio
+    - [ ] theme
+    - [x] radio
+    - [x] radioGroup
+  - [ ] Checkbox
+  - [ ] Input
+    - [ ] input basic
+    - [ ] search - auto complete
+  - [ ] Textarea
+  - [ ] Select
+  - [ ] Dialogs
+  - [ ] Lists
+  - [ ] Tables
+  - [ ] Progress
+  - [ ] Avatars
+  - [ ] Balloons
+  - [ ] Badges
+  - [ ] Icons
+    - [ ] Reaction-icon
+    - [ ] Sns-icon
+    - [ ] Other-icon
+    - [ ] Customize-icon
+    - [ ] Pixel-arts
+  - [ ] Reaction-icon
+  - [ ] Sns-icons
+  - [ ] Card
+
 - Porject Related
-   - [ ] eslint
-   - [ ] prettier
-   - [ ] theme generate
+
+  - [ ] eslint
+  - [ ] prettier
+  - [ ] theme generate
 
 - 🍭 Fancy
-   - [ ] beat with music
-
+  - [ ] beat with music
 
 ---
 
 ### 🅰️ Fonts
+
 List of fonts that are recommend for usage alongside the library.
 
 | Language  | Font                                                               |
@@ -87,13 +103,16 @@ List of fonts that are recommend for usage alongside the library.
 | English   | [Kongtext](https://www.dafont.com/kongtext.font)                   |
 | Japanese  | [美咲フォント](http://littlelimit.net/misaki.htm)                  |
 | Japanese  | [Nu もち](http://kokagem.sakura.ne.jp/font/mochi/)                 |
-| Korean    | [둥근모꼴](http://cactus.tistory.com/193)                              |
+| Korean    | [둥근모꼴](http://cactus.tistory.com/193)                          |
+
 ---
 
 ## ☑️ Check out
+
 Take a look at https://github.com/Divoolej/react-select-nes-css-theme for making the popular [react-select](https://github.com/JedWatson/react-select) fit in with nes.css!
 
 ---
+
 ## License
 
 MIT © [EggTronic](https://github.com/eggtronic)
