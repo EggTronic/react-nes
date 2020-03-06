@@ -12,7 +12,6 @@ interface RadioProps {
   onClick: (value: any) => any;
 }
 
-// here we use class component so that RadioGroup can inject props into Radio
 const Radio: React.FC<RadioProps> = ({
   className,
   theme,
