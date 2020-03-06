@@ -1,8 +1,15 @@
 @import "../index.scss";
 
-.nes-btn {
-  &.is-dark {
-    background-color: map-get($colors, dark);
-    color: map-get($colors, white);
+@each $c in primary, success, warning, error, disabled {
+  label.is-#{$c} {
+    .nes-radio {
+      margin-left: 10px;
+      &:checked + span::before {
+        color: map-get($colors, $c);
+      }
+    }
+    span {
+      color: map-get($colors, $c);
+    }
   }
 }

@@ -55,8 +55,8 @@
     - [x] dark section
     - [ ] title center
     - [ ] rounded corners
-  - [ ] Radio
-    - [ ] theme
+  - [x] Radio
+    - [x] theme
     - [x] radio
     - [x] radioGroup
   - [ ] Checkbox

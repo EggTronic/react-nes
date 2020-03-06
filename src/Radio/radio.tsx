@@ -23,14 +23,17 @@ const Radio: React.FC<RadioProps> = ({
   onClick,
   ...other
 }) => (
-  <label className="nes-radio-group">
+  <label
+    className={classnames(className, {
+      [`is-${theme}`]: theme
+    })}
+  >
     <input
       type="radio"
-      className={classnames(className, "nes-radio", {
-        [`is-${theme}`]: theme
-      })}
+      disabled={theme === "disabled"}
+      className={classnames(className, "nes-radio")}
       value={value}
-      checked={isActive}
+      checked={isActive && !(theme === "disabled")}
       onChange={() => {
         onClick(value);
       }}

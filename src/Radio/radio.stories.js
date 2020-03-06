@@ -22,8 +22,12 @@ export const Theme = () => (
         selectedValue={store.get("selectedValue")}
         onChange={onValueChange}
       >
-        <Radio theme="primary" value="1" label="o1" />
-        <Radio theme="success" value="2" label="o2" />
+        <Radio theme="primary" value="1" label="primary" />
+        <Radio theme="success" value="2" label="success" />
+        <Radio theme="warning" value="3" label="warning" />
+        <Radio value="4" label="normal" />
+        <Radio theme="error" value="5" label="error" />
+        <Radio theme="disabled" value="5" label="disabled" />
       </RadioGroup>
     </State>
   </Section>
