@@ -27,6 +27,14 @@ export const Title = () => (
       {" "}
       This title is rolling!{" "}
     </Section>
+    <Section title={"Center"} titleCenter={true} theme="dark">
+      {" "}
+      This title & text is centered!{" "}
+    </Section>
+    <Section title={"Rounded"} isRounded={true} theme="error">
+      {" "}
+      This section corner is rounded!{" "}
+    </Section>
   </div>
 );
 

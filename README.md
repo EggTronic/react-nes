@@ -53,8 +53,9 @@
     - [x] title scroll
     - [x] themed section
     - [x] dark section
-    - [ ] title center
-    - [ ] rounded corners
+    - [x] title center
+    - [x] rounded corners
+    - [ ] rounded corners with theme
   - [x] Radio
     - [x] theme
     - [x] radio

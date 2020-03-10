@@ -8,8 +8,10 @@ interface SectionProps {
   theme: "primary" | "success" | "warning" | "error" | "disabled" | "dark";
   fill: boolean;
   title: string;
+  titleCenter: boolean;
   titleStyle: string;
   titleScroll: boolean;
+  isRounded: boolean;
 }
 
 const Section: React.FC<SectionProps> = ({
@@ -18,8 +20,10 @@ const Section: React.FC<SectionProps> = ({
   fill,
   theme,
   title,
+  titleCenter,
   titleStyle,
   titleScroll,
+  isRounded,
   ...other
 }) => (
   <section
@@ -28,7 +32,9 @@ const Section: React.FC<SectionProps> = ({
       "is-dark": theme === "dark",
       "with-title": title,
       [`nes-container-filled_${theme}-shadow`]: fill,
-      "with-title_flow": titleScroll
+      "with-title_flow": titleScroll,
+      "is-centered": titleCenter,
+      "is-rounded": isRounded
     })}
     {...other}
   >
