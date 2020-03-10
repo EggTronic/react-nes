@@ -1,9 +1,13 @@
 import React from "react";
 import { Checkbox } from "../index";
 
+interface CheckboxValues {
+  [key: string]: boolean;
+}
+
 interface CheckboxGroupProps {
   className: string;
-  selectedValues: any;
+  selectedValues: CheckboxValues;
   onChange: (value: any) => any;
 }
 

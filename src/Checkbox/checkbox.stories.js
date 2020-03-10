@@ -25,6 +25,10 @@ const onValueChange = value => {
 
 export const Theme = () => (
   <Section title="Checkbox" titleScroll={true}>
-    <State store={store}></State>
+    <State store={store}>
+      <CheckboxGroup>
+        <Checkbox />
+      </CheckboxGroup>
+    </State>
   </Section>
 );
