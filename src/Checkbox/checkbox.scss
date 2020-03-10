@@ -1,0 +1,15 @@
+@import "../index.scss";
+
+@each $c in primary, success, warning, error, disabled {
+  label.is-#{$c} {
+    .nes-checkbox {
+      margin-left: 10px;
+      &:checked + span::before {
+        color: map-get($colors, $c);
+      }
+    }
+    span {
+      color: map-get($colors, $c);
+    }
+  }
+}

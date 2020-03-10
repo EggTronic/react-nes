@@ -88,6 +88,8 @@
   - [ ] eslint
   - [ ] prettier
   - [ ] theme generate
+  - [ ] code block for storybook
+  - [ ] unit test
 
 - 🍭 Fancy
   - [ ] beat with music

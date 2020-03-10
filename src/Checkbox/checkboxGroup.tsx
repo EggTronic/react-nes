@@ -1,16 +1,16 @@
 import React from "react";
-import { Radio } from "../index";
+import { Checkbox } from "../index";
 
-interface RadioGroupProps {
+interface CheckboxGroupProps {
   className: string;
-  selectedValue: string;
+  selectedValues: any;
   onChange: (value: any) => any;
 }
 
-const RadioGroup: React.FC<RadioGroupProps> = ({
+const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
   className,
   children,
-  selectedValue,
+  selectedValues,
   onChange,
   ...other
 }) => {
@@ -19,13 +19,13 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
   };
 
   return (
-    <div className="nes-radio-group" {...other}>
+    <div className="nes-checkbox-group" {...other}>
       {React.Children.map(children, (child: React.ReactElement<any>) => {
         // here should validate the type of child
         return React.cloneElement(child, {
           label: child.props.label,
           value: child.props.value,
-          isActive: selectedValue === child.props.value,
+          isActive: selectedValues[child.props.value],
           onClick: handleChange
         });
       })}
@@ -33,4 +33,4 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
   );
 };
 
-export default RadioGroup;
+export default CheckboxGroup;
