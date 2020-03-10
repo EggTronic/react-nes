@@ -49,13 +49,13 @@
   - [x] Button
     - [x] themed button
     - [x] dark button
-  - [ ] Section
+  - [x] Section
     - [x] title scroll
     - [x] themed section
     - [x] dark section
     - [x] title center
     - [x] rounded corners
-    - [ ] rounded corners with theme
+    - [x] rounded corners with theme
   - [x] Radio
     - [x] theme
     - [x] radio
