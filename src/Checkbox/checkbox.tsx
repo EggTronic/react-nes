@@ -22,24 +22,30 @@ const Checkbox: React.FC<CheckboxProps> = ({
   onClick,
   ...other
 }) => (
-  <label
-    className={classnames(className, {
-      [`is-${theme}`]: theme
-    })}
-  >
-    <input
-      type="checkbox"
-      disabled={theme === "disabled"}
-      className={classnames(className, "nes-checkbox")}
-      value={value}
-      checked={isActive && !(theme === "disabled")}
-      onChange={() => {
-        onClick(value);
-      }}
-      {...other}
-    />
-    <span>{label}</span>
-  </label>
+  <div style={{backgroundColor: theme === 'dark'? "#212529" : null, padding: "1rem 0"}}>
+    <label
+      className={classnames(className, {
+        [`is-${theme}`]: theme
+      })}
+    >
+      <input
+        type="checkbox"
+        disabled={theme === "disabled"}
+        className={classnames(className, 
+          "nes-checkbox",
+          {
+            [`is-dark`]: theme === 'dark'
+          })}
+        value={value}
+        checked={isActive && !(theme === "disabled")}
+        onChange={() => {
+          onClick(value);
+        }}
+        {...other}
+      />
+      <span>{label}</span>
+    </label>
+  </div>
 );
 
 export default Checkbox;
