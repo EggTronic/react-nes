@@ -20,12 +20,21 @@ const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
   ...other
 }) => {
   const handleChange = label => {
-    let numberOfSelectedValues = 0
-    Object.values(selectedValues).forEach(value=>{if (value) {numberOfSelectedValues+=1;}});
+    let numberOfSelectedValues = 0;
+    Object.values(selectedValues).forEach(value=>{
+      if (value === true) {
+        numberOfSelectedValues += 1;
+      }
+    });
     // only allow to modify if label has been selected or the number of seletected values is less than limit
-    if (numberOfSelectedValues < limit || selectedValues[label]) {
+    if (limit) {
+      if (numberOfSelectedValues < limit || selectedValues[label]) {
+        onChange(label);
+      }
+    } else {
       onChange(label);
     }
+    
   };
 
   return (
