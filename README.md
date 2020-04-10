@@ -60,7 +60,8 @@
     - [x] theme
     - [x] radio
     - [x] radioGroup
-  - [ ] Checkbox
+  - [x] Checkbox
+    - [ ] css improvement (checkbox color)
   - [ ] Input
     - [ ] input basic
     - [ ] search - auto complete
