@@ -34,12 +34,13 @@ const Checkbox: React.FC<CheckboxProps> = ({
         className={classnames(className, 
           "nes-checkbox",
           {
-            [`is-dark`]: theme === 'dark'
-          })}
+            [`is-${theme}`]: theme
+          }
+        )}
         value={value}
         checked={isActive && !(theme === "disabled")}
         onChange={() => {
-          onClick(value);
+          onClick(label);
         }}
         {...other}
       />

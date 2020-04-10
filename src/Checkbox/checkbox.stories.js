@@ -7,13 +7,17 @@ export default {
   title: "Checkbox"
 };
 
+const selectedValues = {
+  "primary": true,
+  "success": false,
+  "warning": false,
+  "error": false,
+  "dark": false,
+  "disabled": false
+}
+
 const store = new Store({
-  selectedValues: {
-    "1": false,
-    "2": false,
-    "3": false,
-    "4": false
-  }
+  selectedValues
 });
 
 const onValueChange = value => {
@@ -28,11 +32,13 @@ const onValueChange = value => {
 export const Theme = () => (
   <Section title="Checkbox" titleScroll={true}>
     <State store={store}>
-      <CheckboxGroup>
-        <Checkbox theme="primary" value={store.get("selectedValues")[1]} label="primary" />
-        <Checkbox theme="success" value={store.get("selectedValues")[2]} label="success" />
-        <Checkbox theme="warning" value={store.get("selectedValues")[3]} label="warning" />
-        <Checkbox theme="dark" value={store.get("selectedValues")[4]} label="dark" />
+      <CheckboxGroup onChange={onValueChange} selectedValues={store.get("selectedValues")}>
+        <Checkbox theme="primary" value={store.get("selectedValues")["primary"]} label="primary" />
+        <Checkbox theme="success" value={store.get("selectedValues")["success"]} label="success" />
+        <Checkbox theme="warning" value={store.get("selectedValues")["warning"]} label="warning" />
+        <Checkbox theme="error" value={store.get("selectedValues")["error"]} label="error" />
+        <Checkbox theme="disabled" value={store.get("selectedValues")["disabled"]} label="disabled" />
+        <Checkbox theme="dark" value={store.get("selectedValues")["dark"]} label="dark" />
       </CheckboxGroup>
     </State>
   </Section>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Checkbox } from "../index";
 
 interface CheckboxValues {
   [key: string]: boolean;
@@ -18,8 +17,8 @@ const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
   onChange,
   ...other
 }) => {
-  const handleChange = value => {
-    onChange(value);
+  const handleChange = label => {
+    onChange(label);
   };
 
   return (
@@ -29,7 +28,7 @@ const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
         return React.cloneElement(child, {
           label: child.props.label,
           value: child.props.value,
-          isActive: selectedValues[child.props.value],
+          isActive: selectedValues[child.props.label],
           onClick: handleChange
         });
       })}

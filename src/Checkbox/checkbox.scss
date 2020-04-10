@@ -2,13 +2,14 @@
 
 @each $c in primary, success, warning, error, disabled {
   label.is-#{$c} {
+		user-select: none;
     .nes-checkbox {
-      margin-left: 10px;
       &:checked + span::before {
         color: map-get($colors, $c);
       }
     }
-    span {
+    // check border color
+    span::before {
       color: map-get($colors, $c);
     }
   }
