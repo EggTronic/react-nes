@@ -32,7 +32,7 @@ const onValueChange = value => {
 export const Theme = () => (
   <Section title="Checkbox" titleScroll={true}>
     <State store={store}>
-      <CheckboxGroup onChange={onValueChange} selectedValues={store.get("selectedValues")}>
+      <CheckboxGroup onChange={onValueChange} selectedValues={store.get("selectedValues")} limit={1}>
         <Checkbox theme="primary" value={store.get("selectedValues")["primary"]} label="primary" />
         <Checkbox theme="success" value={store.get("selectedValues")["success"]} label="success" />
         <Checkbox theme="warning" value={store.get("selectedValues")["warning"]} label="warning" />

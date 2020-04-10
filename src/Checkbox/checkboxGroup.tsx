@@ -8,6 +8,7 @@ interface CheckboxGroupProps {
   className: string;
   selectedValues: CheckboxValues;
   onChange: (value: any) => any;
+  limit: number;
 }
 
 const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
@@ -15,10 +16,16 @@ const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
   children,
   selectedValues,
   onChange,
+  limit,
   ...other
 }) => {
   const handleChange = label => {
-    onChange(label);
+    let numberOfSelectedValues = 0
+    Object.values(selectedValues).forEach(value=>{if (value) {numberOfSelectedValues+=1;}});
+    // only allow to modify if label has been selected or the number of seletected values is less than limit
+    if (numberOfSelectedValues < limit || selectedValues[label]) {
+      onChange(label);
+    }
   };
 
   return (

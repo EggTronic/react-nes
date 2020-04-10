@@ -61,7 +61,8 @@
     - [x] radio
     - [x] radioGroup
   - [x] Checkbox
-    - [ ] css improvement (checkbox color)
+    - [x] css improvement (checkbox color)
+    - [x] limit max selected items
   - [ ] Input
     - [ ] input basic
     - [ ] search - auto complete
