@@ -63,8 +63,9 @@
   - [x] Checkbox
     - [x] css improvement (checkbox color)
     - [x] limit max selected items
-  - [ ] Input
-    - [ ] input basic
+  - [x] Input
+    - [x] input basic
+    - [ ] css improvement 
     - [ ] search - auto complete
   - [ ] Textarea
   - [ ] Select

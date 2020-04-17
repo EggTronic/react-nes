@@ -31,7 +31,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
       <input
         type="checkbox"
         disabled={theme === "disabled"}
-        className={classnames(className, 
+        className={classnames( 
           "nes-checkbox",
           {
             [`is-${theme}`]: theme

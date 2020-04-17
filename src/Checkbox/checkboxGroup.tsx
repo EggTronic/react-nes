@@ -20,6 +20,7 @@ const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
   ...other
 }) => {
   const handleChange = label => {
+    // get the numebr of selected fields
     let numberOfSelectedValues = 0;
     Object.values(selectedValues).forEach(value=>{
       if (value === true) {
@@ -34,7 +35,6 @@ const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
     } else {
       onChange(label);
     }
-    
   };
 
   return (
