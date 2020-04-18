@@ -21,8 +21,13 @@ const Input: React.FC<InputProps> = ({
   ...other
 }) => {
   return( 
-    <div className={classnames(className, "nes-field", {["is-inline"]: isInline})}> 
-      <label>{label}</label>
+    <div 
+      className={classnames(className, "nes-field", {["is-inline"]: isInline})}
+      style={theme === "dark"? {backgroundColor: "#212529", padding: "1em"} : {padding: "1em"}}
+    > 
+      <label
+        style={theme === "dark"? {color: "#fff"} : null}
+      >{label}</label>
       <input 
         type="text" 
         className={classnames(

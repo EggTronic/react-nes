@@ -65,7 +65,7 @@
     - [x] limit max selected items
   - [x] Input
     - [x] input basic
-    - [ ] css improvement 
+    - [x] css improvement 
     - [ ] search - auto complete
   - [ ] Textarea
   - [ ] Select
