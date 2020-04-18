@@ -66,8 +66,10 @@
   - [x] Input
     - [x] input basic
     - [x] css improvement 
+    - [ ] more theme
     - [ ] search - auto complete
   - [x] Textarea
+    - [ ] more theme
   - [ ] Select
   - [ ] Dialogs
   - [ ] Lists
