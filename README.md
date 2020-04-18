@@ -67,7 +67,7 @@
     - [x] input basic
     - [x] css improvement 
     - [ ] search - auto complete
-  - [ ] Textarea
+  - [x] Textarea
   - [ ] Select
   - [ ] Dialogs
   - [ ] Lists
