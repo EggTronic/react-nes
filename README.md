@@ -70,7 +70,8 @@
     - [ ] search - auto complete
   - [x] Textarea
     - [ ] more theme
-  - [ ] Select
+  - [x] Select
+    - [ ] more theme
   - [ ] Dialogs
   - [ ] Lists
   - [ ] Tables

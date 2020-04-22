@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import Textarea from "./textarea";
+import Select from "./select";
 
 describe("Test Component", () => {
   let props: any;
@@ -10,7 +10,7 @@ describe("Test Component", () => {
     props = {};
   });
 
-  const renderWrapper = () => shallow(<Textarea {...props} />);
+  const renderWrapper = () => shallow(<Select {...props} />);
 
   describe("Snapshots", () => {
     it("should match snapshots as normal themed", () => {
