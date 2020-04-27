@@ -69,6 +69,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "nes.css": "^2.3.0"
+    "nes.css": "^2.3.0",
+    "rc-dialog": "^7.6.1"
   }
 }
