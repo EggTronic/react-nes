@@ -60,9 +60,11 @@
     - [x] theme
     - [x] radio
     - [x] radioGroup
+    - [ ] optimization
   - [x] Checkbox
     - [x] css improvement (checkbox color)
     - [x] limit max selected items
+    - [ ] optimization
   - [x] Input
     - [x] input basic
     - [x] css improvement 
