@@ -10,7 +10,7 @@ type getContainerFunc = () => HTMLElement;
 export interface ModalProps {
   children: any;
   className: string;
-  title: string;
+  title: string|React.ReactElement;
   visible: boolean;
   onOk: (e: React.MouseEvent<HTMLElement>) => void;
   onCancel: (e: React.MouseEvent<HTMLElement>) => void;
@@ -36,6 +36,7 @@ export interface ModalLocale {
 const Modal: React.FC<ModalProps> = ({
   children,
   className,
+  title,
   theme,
   onCancel,
   onOk,
@@ -93,13 +94,14 @@ const Modal: React.FC<ModalProps> = ({
   return (
     <Dialog
       {...other}
+      title={title}
       getContainer={getContainer === undefined ? null : getContainer}
       wrapClassName={wrapClassNameExtended}
       footer={footer === undefined ? renderFooter : footer}
       visible={visible}
       // mousePosition={mousePosition}
       onClose={handleCancel}
-    // closeIcon={closeIconToRender}
+      // closeIcon={closeIconToRender}
     />
   );
 }
