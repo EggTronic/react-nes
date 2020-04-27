@@ -49,6 +49,7 @@
   - [x] Button
     - [x] themed button
     - [x] dark button
+    - [ ] asyc button with loading icon
   - [x] Section
     - [x] title scroll
     - [x] themed section
